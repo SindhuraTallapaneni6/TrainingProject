@@ -1,0 +1,90 @@
+
+    <div class="container">
+    <form [formGroup]="signupform" (ngSubmit) ="onSubmit()"> 
+        <div class="form-group ">
+              
+            <label for="id" class="text-primary">CustId:</label>
+            <input type="number" formControlName="id" 
+            placeholder="Enter Id" name="id" class="form-control" id="id" required>
+       
+        
+        </div>
+        <div class="form-group ">
+              
+            <label for="fname" class="text-primary">FirstName:</label>
+            <input type="text" formControlName="fname" 
+            placeholder="Enter Firstname" name="fname" class="form-control" id="fname" required>
+       
+        
+        </div>
+        <div class="form-group ">
+              
+            <label for="lname" class="text-primary">LastName:</label>
+            <input type="text" formControlName="lname" 
+            placeholder="Enter Lastname" name="lname" class="form-control" id="lname" required>
+       
+        
+        </div>
+        <div class="form-group ">
+              
+            <label for="uname" class="text-primary">UserName:</label>
+            <input type="text" formControlName="uname" 
+            placeholder="Enter Username" name="uname" class="form-control" id="uname" required>
+       
+        
+        </div>
+        <div class="form-group ">
+              
+            <label for="email" class="text-primary">Email:</label>
+            <!-- <input type="text" formControlName="fname" 
+            placeholder="Enter Firstname" name="fname" class="form-control" id="fname" required> -->
+            <input type="email" email="true" formControlName="email" placeholder="Enter Email Id" name="email" class="form-control" id="email" required>
+        
+        </div>
+        <div class="form-group ">
+              
+            <label for="rpwd" class="text-primary">Password:</label>
+            <input type="text" formControlName="rpwd" 
+            placeholder="Enter password" name="rpwd" class="form-control" id="rpwd" required>
+       
+        
+        </div>
+        <div class="form-group ">
+              
+            <label for="repwd" class="text-primary">Re-Enter Password:</label>
+            <input type="text" formControlName="repwd" 
+            placeholder="Enter password" name="repwd" class="form-control" id="repwd" required>
+       
+        
+        </div>
+        <div class="form-group ">
+              
+            <label for="phone" class="text-primary">Phone Number:</label>
+            <input type="number" formControlName="phone" 
+            placeholder="Enter PhoneNumber" name="phone" class="form-control" id="phone" required>
+       
+        
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" >Submit</button>
+        </div>
+        <div class="form-group ">
+              
+            <label for="otp" class="text-primary">OTP:</label>
+            <input type="number" formControlName="otp" 
+            placeholder="Enter Otp" name="otp" class="form-control" id="otp" required>
+       
+        
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" (click)="addUser()" [disabled]="!signupform.valid">SignUp</button>
+        </div>
+        <div>
+            Already have an account ??  <a routerLink="login" >Click Here</a> to Register
+        </div>
+        
+    
+
+    
+ </form> 
+ </div>
