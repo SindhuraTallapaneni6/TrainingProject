@@ -1,0 +1,34 @@
+<div class="container">
+<h2>Login Form</h2>
+ 
+        <form [formGroup]="loginform" (ngSubmit) ="onSubmit()"> 
+            
+        
+            <div class="form-group ">
+              
+                <label for="uname" class="text-primary">UserName:</label>
+                <input type="text" formControlName="uname" 
+                placeholder="Enter username" name="uname" class="form-control" id="uname" required>
+           
+            
+            </div>
+            <div class="form-group">
+                
+                <label for="pwd" class="text-primary">Password:</label><input type="password" formControlName="pwd" placeholder="Enter Passwords" name="pwd" class="form-control" id="pwd" required>
+                       
+            </div>
+            <div class="form-group">
+               
+                <label><input type="checkbox">Remember me</label><br>
+              
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary" >Login</button>
+            </div>
+            <div>
+                New user ??  <a [routerLink]="['/sign-up']" >Click Here</a> to Register
+            </div>
+        </form>
+    </div>
+
+    
