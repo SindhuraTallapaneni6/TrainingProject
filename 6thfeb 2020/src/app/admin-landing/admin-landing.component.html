@@ -1,0 +1,60 @@
+<nav class="navbar navbar-expand" >
+   <div>
+       <ul class="navbar-nav">
+           <li class="nav-item">
+               <a class="nav-link" [routerLink]="['/companylist']"><button class="btn btn-outline-primary">CompanyList</button></a>
+           </li>
+           <li class="nav-item">
+               <a routerLink="comparecompany" class="nav-link" ><button class="btn btn-outline-primary"> Compare Company</button></a>
+           </li>
+           <li class="nav-item">
+               <a routerLink="comparesector" class="nav-link"><button class="btn btn-outline-primary">Compare Sector</button></a>
+           </li>
+           
+           
+       </ul>
+   </div>
+</nav>
+    <header>
+        <form [formGroup]="adlogform" (ngSubmit) ="onSubmit()">
+        <div class="container rounded">
+       
+        <div class="row mb-3">
+          <div class="col-5 my-5 ">
+
+              <div class="card">  
+
+                 <h1 class=" text-center  bg-success text-white "> STOCK MARKETING </h1>  <br>
+              <div class="card my-card border border-curved text-center btn btn-outline-success" onclick="location.href='importdata'">
+                      <div class=" bg-light text-dark text-center">
+                      <h3 class="card-title display-5">ImportData</h3>
+                     </div>  
+              </div>
+
+                  <div class="card my-card border border-curved text-center btn btn-outline-success" onclick="location.href='managecompany'">
+                     <div  class=" bg-light text-dark text-center">
+                     <h3 class="card-title display-5 ">ManageCompany</h3>
+                  </div>
+                   </div>
+
+                   <div class="card my-card border border-curved text-center btn btn-outline-success" onclick="location.href='manageexchange'">
+                    <div  class=" bg-light text-dark text-center">
+                    <h3 class="card-title display-5 ">ManageExchange</h3>
+                 </div>
+                  </div>
+
+                  <div class="card my-card border border-curved text-center btn btn-outline-success" onclick="location.href='addipo'">
+                    <div  class=" bg-light text-dark text-center">
+                    <h3 class="card-title display-5 ">Update IPO details</h3>
+                 </div>
+                  </div>
+                 </div>
+              
+          </div>
+          
+         </div>
+        </div>
+      </form>
+         
+      </header>
+     

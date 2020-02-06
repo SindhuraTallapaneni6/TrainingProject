@@ -1,0 +1,72 @@
+
+<div class="container">
+    <form [formGroup]="addcompanyform" (ngSubmit) ="onSubmit()"> 
+        <div class="form-group ">
+              
+            <label for="cid" class="text-primary">Company ID:</label>
+            <input type="number" formControlName="cid" 
+            placeholder="Enter Company Name" name="cid" class="form-control" id="cid" required>
+       
+        
+        </div>
+        <div class="form-group ">
+              
+            <label for="cname" class="text-primary">Company Name:</label>
+            <input type="text" formControlName="cname" 
+            placeholder="Enter Company Name" name="cname" class="form-control" id="cname" required>
+       
+        
+        </div>
+        
+        <div class="form-group ">
+              
+            <label for="ceoname" class="text-primary">CEO:</label>
+            <input type="text" formControlName="ceoname" 
+            placeholder="Enter CEO name" name="ceoname" class="form-control" id="ceoname" required>
+       
+        
+        </div>
+        <div class="form-group ">
+              
+            <label for="bod" class="text-primary">Board of Director:</label>
+            <input type="text" formControlName="bod" 
+            placeholder="Enter Board of Director" name="bod" class="form-control" id="bod" required>
+       
+        
+        </div>
+        <div class="form-group ">
+              
+            <label for="tover" class="text-primary">TurnOver:</label>
+            <input type="number" formControlName="tover" 
+            placeholder="Enter Company TurnOver" name="tover" class="form-control" id="tover" required>
+       
+        
+        </div>
+        
+        <div class="form-group ">
+              
+            <label for="sector" class="text-primary">Sector:</label>
+            <input type="sector"  formControlName="sector" 
+            placeholder="Name of Sector" name="sector" class="form-control" id="sector" required>
+        
+        </div>
+        <div class="form-group ">
+              
+            <label for="brief" class="text-primary">Brief:</label>
+            <textarea type="text" formControlName="brief" 
+            placeholder="Enter Information about company" name="brief" class="form-control" id="brief" required></textarea>
+       
+        
+        </div>
+        <div class="form-group ">
+              
+            <label for="scode" class="text-primary">Stock Code:</label>
+            <input type="text" formControlName="scode" 
+            placeholder="Enter Stock Code" name="scode" class="form-control" id="scode" required>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" (click)="addCompany()" [disabled]="!addcompanyform.valid">AddCompany</button>
+        </div><br><br>
+    
+ </form> 
+ </div>

@@ -1,0 +1,45 @@
+<div class="col-md-6">
+    <h2 class="text-center">Update User</h2>
+    <form [formGroup]="updateUser" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <input type="number" formControlName="id" placeholder=" Enter UserId" name="id" class="form-control" id="id" disabled/>
+         
+      </div>
+      <div class="form-group">
+        <input type="text" formControlName="fname" placeholder="Enter FirstName" name="fname" class="form-control" id="fname">
+      
+      </div>
+      <div class="form-group">
+        <input type="text" formControlName="lname" placeholder="Enter LastName" name="lname" class="form-control" id="lname">
+      
+      </div>
+      <div class="form-group">
+        <input type="text" formControlName="uname" placeholder="Enter UserName" name="uname" class="form-control" id="uname">
+      
+      </div>
+       <div class="form-group">
+        <input type="email" formControlName="email" placeholder="Enter email" name="email" class="form-control" id="email">
+
+      </div>
+      <div class="form-group">
+        <input type="rpwd" formControlName="rpwd" placeholder="Enter password" name="rpwd" class="form-control" id="rpwd">
+
+      </div>
+      <div class="form-group">
+        <input type="repwd" formControlName="repwd" placeholder="Re-Enter password" name="rpwd" class="form-control" id="rpwd">
+
+      </div>
+       <div class="form-group">
+        <input type="number" formControlName="phone" placeholder="User phone" name="phone" class="form-control" id="phone">
+      
+      </div>
+      <div class="form-group">
+        <input type="number" formControlName="otp" placeholder="Enter OTP" name="otp" class="form-control" id="otp">
+      
+      </div>
+      
+      
+  
+      <button class="btn btn-success" (click)="updateTheUser()" [disabled]="!updateUser.valid">Update User</button>
+    </form>
+  </div>

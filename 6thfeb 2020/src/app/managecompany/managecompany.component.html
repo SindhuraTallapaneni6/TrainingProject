@@ -1,0 +1,41 @@
+
+    <header>
+    <form [formGroup]="managecompanyform" (ngSubmit) ="onSubmit()"></form>
+    <div class="container rounded">
+<div class="row mb-3">
+    <div class="col-5 my-5 ">
+
+        <div class="card pt-5 mt-5">  
+           <h1 class=" text-center  bg-success text-white "> Manage Company </h1> <br>
+
+        <div class="card my-card border border-curved text-center btn btn-outline-success" 
+        onclick="location.href='add-company'">
+                <div class=" bg-light text-dark text-center">
+                <h3 class="card-title display-5">AddCompany</h3>
+               </div>  
+            </div>
+
+            <div class="card my-card border border-curved text-center btn btn-outline-success"
+             onclick="location.href='delete-company'">
+               <div  class=" bg-light text-dark text-center">
+               <h3 class="card-title display-5 ">DeleteCompany</h3>
+            </div>
+             </div>
+
+             <div class="card my-card border border-curved text-center btn btn-outline-success" 
+             onclick="location.href='userlanding'">
+              <div  class=" bg-light text-dark text-center">
+              <h3 class="card-title display-5 ">UpdateCompany</h3>
+           </div>
+            </div>
+
+           
+           </div> 
+        
+    
+        </div>  
+  
+</div>
+</div>
+</header>
+   

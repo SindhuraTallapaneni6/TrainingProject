@@ -1,0 +1,68 @@
+
+<div class="card text-center">
+    <div class="card-header">
+       <h5 class="card-title">User</h5>
+    </div>
+    <div class="card-body">
+      <!-- <h5 class="card-title">Special title treatment</h5>
+      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a> -->
+      <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item">
+          <a class="nav-link " [routerLink]="['/sign-up']">IPOs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/compare-company']">Compare Company </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Compare Sectors</a>
+        </li>
+      
+          <li class="nav-item">
+            <a class="nav-link" href="#">Logout</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+  <header>
+    <form [formGroup]="adlogform" (ngSubmit) ="onSubmit()"></form>
+    <div class="container rounded">
+   
+    <div class="row mb-3">
+      <div class="col-5 my-5 ">
+
+          <div class="card">  
+
+             <h1 class=" text-center  bg-success text-white "> USER </h1>  <br>
+          <div class="card my-card border border-curved text-center btn btn-outline-success" onclick="location.href='addipo'">
+                  <div class=" bg-light text-dark text-center">
+                  <h3 class="card-title display-5">IPOs</h3>
+                 </div>  
+          </div>
+
+              <div class="card my-card border border-curved text-center btn btn-outline-success" onclick="location.href='compare-company'">
+                 <div  class=" bg-light text-dark text-center">
+                 <h3 class="card-title display-5 ">CompareCompany</h3>
+              </div>
+               </div>
+
+               <div class="card my-card border border-curved text-center btn btn-outline-success" onclick="location.href='comparesector'">
+                <div  class=" bg-light text-dark text-center">
+                <h3 class="card-title display-5 ">CompareSectors</h3>
+             </div>
+              </div>
+
+              <div class="card my-card border border-curved text-center btn btn-outline-success" onclick="location.href='sign-up'">
+                <div  class=" bg-light text-dark text-center">
+                <h3 class="card-title display-5 ">Logout</h3>
+             </div>
+              </div>
+             </div>
+          
+      </div>
+      
+     </div>
+    </div>
+     
+  </header>
+ 

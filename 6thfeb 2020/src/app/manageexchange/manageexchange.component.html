@@ -1,0 +1,55 @@
+
+<div class="container">
+    <form [formGroup]="manageexchangeform" (ngSubmit) ="onSubmit()"> 
+        <div class="form-group ">
+              
+            <label for="comid" class="text-primary">Company Id:</label>
+            <input type="number" formControlName="comid" 
+            placeholder="Enter Id" name="comid" class="form-control" id="comid" required>
+       
+        
+        </div>
+        <div class="form-group ">
+              
+            <label for="sename" class="text-primary">Stock Exchange Name:</label>
+            <input type="text" formControlName="sename" 
+            placeholder="Enter StockExchange name" name="sename" class="form-control" id="sename" required>
+       
+        
+        </div>
+        <div class="form-group ">
+              
+            <label for="brief" class="text-primary">Brief:</label>
+            <textarea type="text" formControlName="brief" 
+            placeholder="Enter Information" name="brief" class="form-control" id="brief" required></textarea>
+       
+        
+        </div>
+        <div class="form-group ">
+              
+            <label for="conadd" class="text-primary">Contact Address:</label>
+            <textarea type="text" formControlName="conadd" 
+            placeholder="Enter Contact Address" name="conadd" class="form-control" id="conadd" required></textarea>
+       
+        
+        </div>
+        
+        <div class="form-group ">
+              
+            <label for="remarks" class="text-primary">Remarks:</label>
+            <textarea type="text" formControlName="remarks" 
+            placeholder="Enter remarks" name="remarks" class="form-control" id="remarks" required></textarea>
+       
+        
+        </div>
+        
+       
+        <div class="form-group">
+            <button class="btn btn-primary" (click)="manageExchange()" [disabled]="!manageexchangeform.valid">StockExchange</button>
+        </div><br><br>
+        
+    
+
+    
+ </form> 
+ </div>
