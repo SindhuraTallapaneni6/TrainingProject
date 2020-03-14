@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+          <div class="card card-signin my-5">
+            <div class="card-body">
+
+              <h5 class="card-title text-center">Sign In</h5>
+ 
+        <form [formGroup]="loginform" (ngSubmit) ="onSubmit()" class="background"> 
+            
+        
+            <div class="form-group ">
+              
+                <label for="username" class="text-primary">UserName:</label>
+                <input type="text" formControlName="username" 
+                placeholder="Enter username" name="username" class="form-control" id="username" required>
+            </div>
+            <div class="form-group">
+                
+                <label for="password" class="text-primary">Password:</label><input type="password" formControlName="password" placeholder="Enter Passwords" name="password" class="form-control" id="password" required>           
+            </div>
+            <div class="form-group">
+               
+                <label><input type="checkbox">Remember me</label><br>    
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary" (click)="isValid()" >Login</button>
+            </div>
+            <div>
+                New user ??  <a [routerLink]="['/sign-up']" >Click Here</a> to Register
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+</div> 
+

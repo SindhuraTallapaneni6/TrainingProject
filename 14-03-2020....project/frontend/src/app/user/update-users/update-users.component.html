@@ -1,0 +1,33 @@
+<div class="col-md-6">
+    <h2 class="text-center">Update User</h2>
+    <form [formGroup]="updateProfileForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <input type="number" formControlName="id" placeholder=" Enter UserId" name="id" class="form-control" id="id" disabled/>
+         
+      </div>
+      <div class="form-group">
+        <input type="text" formControlName="firstname" placeholder="Enter FirstName" name="firstname" class="form-control" id="firstname">
+      
+      </div>
+      <div class="form-group">
+        <input type="text" formControlName="lastname" placeholder="Enter LastName" name="lastname" class="form-control" id="lastname">
+      
+      </div>
+      <div class="form-group">
+        <input type="text" formControlName="username" placeholder="Enter UserName" name="username" class="form-control" id="username">
+      
+      </div>
+       <div class="form-group">
+        <input type="email" formControlName="email" placeholder="Enter email" name="email" class="form-control" id="email">
+
+      </div>
+      
+       <div class="form-group">
+        <input type="number" formControlName="phone" placeholder="User phone" name="phone" class="form-control" id="phone">
+      
+      </div>
+  
+  
+      <button class="btn btn-success" (click)="updateTheUser()" [disabled]="!updateProfileForm.valid">Update User</button>
+    </form>
+  </div>

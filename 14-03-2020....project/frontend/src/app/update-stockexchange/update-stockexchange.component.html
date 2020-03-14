@@ -1,0 +1,56 @@
+
+<div class="container">
+    <form [formGroup]="updateStock" (ngSubmit) ="onSubmit()"> 
+        <div class="form-group ">
+              
+            <label for="id" class="text-primary">Company Id:</label>
+            <input type="number" formControlName="id" 
+            placeholder="Enter Id" name="id" class="form-control" id="id" required>
+       
+        
+        </div>
+        <div class="form-group ">
+              
+            <label for="exchangename" class="text-primary">Stock Exchange Name:</label>
+            <input type="text" formControlName="exchangename" 
+            placeholder="Enter StockExchange name" name="exchangename" class="form-control" id="exchangename" required>
+       
+        
+        </div>
+        <div class="form-group ">
+              
+            <label for="brief" class="text-primary">Brief:</label>
+            <textarea type="text" formControlName="brief" 
+            placeholder="Enter Information" name="brief" class="form-control" id="brief" required></textarea>
+       
+        
+        </div>
+        <div class="form-group ">
+              
+            <label for="contactaddress" class="text-primary">Contact Address:</label>
+            <textarea type="text" formControlName="contactaddress" 
+            placeholder="Enter Contact Address" name="contactadd" class="form-control" id="conadd" required></textarea>
+       
+        
+        </div>
+        
+        <div class="form-group ">
+              
+            <label for="remarks" class="text-primary">Remarks:</label>
+            <textarea type="text" formControlName="remarks" 
+            placeholder="Enter remarks" name="remarks" class="form-control" id="remarks" required></textarea>
+       
+        
+        </div>
+        
+       
+        <div class="form-group">
+            <button class="btn btn-primary" (click)="updateTheStock()" [disabled]="!updateStock.valid">UpdateStock</button>
+        </div><br><br>
+        
+    
+
+    
+ </form> 
+ </div>
+

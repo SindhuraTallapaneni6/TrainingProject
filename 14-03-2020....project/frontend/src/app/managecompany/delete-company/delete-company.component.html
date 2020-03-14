@@ -1,0 +1,25 @@
+<div class="container">
+    <form [formGroup]="deletecompanyform" (ngSubmit) ="onSubmit()"> 
+        <div class="form-group ">
+              
+            <label for="id" class="text-primary">Company ID:</label>
+            <input type="number" formControlName="id" 
+            placeholder="Enter Company Name" name="id" class="form-control" id="id" required>
+       
+        
+        </div>
+        <div class="form-group ">
+              
+            <label for="companyname" class="text-primary">Company Name:</label>
+            <input type="text" formControlName="companyname" 
+            placeholder="Enter Company Name" name="companyname" class="form-control" id="companyname" required>
+       
+        
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" (click)="deleteCompany()" [disabled]="!deletecompanyform.valid">DeleteCompany</button>
+        </div><br><br>
+    
+ </form> 
+ </div>
+

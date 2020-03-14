@@ -1,0 +1,39 @@
+<div class="container">
+    <h2>SectorDetails</h2>
+     
+            <form [formGroup]="updateSectorform" (ngSubmit) ="onSubmit()"> 
+
+                <div class="form-group ">
+              
+                    <label for="id" class="text-primary">SectorId:</label>
+                    <input type="number" formControlName="id" 
+                    placeholder="Enter Id" name="id" class="form-control" id="id" required>
+               
+                
+                </div>
+                
+            
+                <div class="form-group ">
+                  
+                    <label for="name" class="text-primary">SectorName:</label>
+                    <input type="text" formControlName="name" 
+                    placeholder="Enter sectorname" name="name" class="form-control" id="name" required>
+               
+                
+                </div>
+                <div class="form-group ">
+                    <label for="brief" class="text-primary">Brief:</label>
+                    <textarea class="form-control mb-4" formControlName="brief" name="brief" id="brief" cols="30" rows="3" placeholder="Remarks about this IPO"></textarea>
+                        </div>
+                   
+                
+                        <div class="form-group">
+                            <button class="btn btn-primary" (click)="updateTheSector()" [disabled]="!updateSectorform.valid">UpdateSector</button>
+                        </div><br><br>
+              
+            </form>
+        </div>
+    
+        
+    
+

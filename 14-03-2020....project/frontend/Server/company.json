@@ -1,0 +1,27 @@
+{
+    "Company": [
+      {
+        "cid": 1,
+        "cname": "Cognizant",
+        "ceoname": "Brian Humphries",
+        "bod": "string",
+        "tover": 6533334,
+        "sector": "string",
+        "brief": "string",
+        "scode": "string"
+        
+        
+        
+      },
+      {
+        "cid": 101,
+        "cname": "google",
+        "ceoname": "sundar",
+        "bod": "abcd",  
+        "tover": 98456,
+        "sector": "it",  
+        "brief": "xyz",
+        "scode": "abcd"
+      }
+    ]
+  }

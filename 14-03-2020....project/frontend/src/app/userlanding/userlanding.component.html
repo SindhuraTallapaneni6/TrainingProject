@@ -1,0 +1,139 @@
+
+<!-- <div class="card text-center">
+    <div class="card-header">
+       <h5 class="card-title">User</h5>
+    </div>
+    <div class="card-body">
+    
+      <ul class="nav nav-tabs card-header-tabs">
+        <li class="nav-item">
+          <a class="nav-link " [routerLink]="['/sign-up']">IPOs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/compare-company']">Compare Company </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Compare Sectors</a>
+        </li>
+      
+          <li class="nav-item">
+            <a class="nav-link" href="#">Logout</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+  <header>
+    <form [formGroup]="adlogform" (ngSubmit) ="onSubmit()"></form>
+    <div class="container rounded">
+   
+    <div class="row mb-3">
+      <div class="col-5 my-5 ">
+
+          <div class="card">  
+
+             <h1 class=" text-center  bg-success text-white "> USER </h1>  <br>
+          <div class="card my-card border border-curved text-center btn btn-outline-success" onclick="location.href='addipo'">
+                  <div class=" bg-light text-dark text-center">
+                  <h3 class="card-title display-5">IPOs</h3>
+                 </div>  
+          </div>
+
+              <div class="card my-card border border-curved text-center btn btn-outline-success" onclick="location.href='compare-company'">
+                 <div  class=" bg-light text-dark text-center">
+                 <h3 class="card-title display-5 ">CompareCompany</h3>
+              </div>
+               </div>
+
+               <div class="card my-card border border-curved text-center btn btn-outline-success" onclick="location.href='comparesector'">
+                <div  class=" bg-light text-dark text-center">
+                <h3 class="card-title display-5 ">CompareSectors</h3>
+             </div>
+              </div>
+
+              <div class="card my-card border border-curved text-center btn btn-outline-success" onclick="location.href='sign-up'">
+                <div  class=" bg-light text-dark text-center">
+                <h3 class="card-title display-5 ">Logout</h3>
+             </div>
+              </div>
+             </div>
+          
+      </div>
+      
+     </div>
+    </div>
+     
+  </header> -->
+  <div class= "container rounded">
+    <div class="row mb-4  mx-5  my-5">
+     
+       <div class="col-lg-3 col-md-5 col-sm-6 col-xs-12">
+     
+    <a [routerLink]="['/compare-company']" class="card company mx-5 my-5">
+    <div class="overlay"></div>
+    <div class="circle">
+    <svg height="30" width="200">
+       <text x="17" y="19" fill="red">CompareCompanies</text>
+     </svg> 
+    </div>
+    <p>Companies</p>
+    </a>
+    </div>
+
+       <div class="col-lg-3 col-md-5 col-sm-6 col-xs-12">
+     
+    <a [routerLink]="['/compare-company']" class="card sector mx-5 my-5">
+    <div class="overlay"></div>
+    <div class="circle">
+    <svg height="30" width="200">
+       <text x="17" y="19" fill="red">CompareSector</text>
+     </svg> 
+    </div>
+    <p>Sector</p>
+    </a>
+
+    </div>
+
+    <div class="col-lg-3 col-md-5 col-sm-6 col-xs-12">
+     
+      <a [routerLink]="['/useripo']" class="card ipolist mx-5 my-5">
+      <div class="overlay"></div>
+      <div class="circle">
+      <svg height="30" width="200">
+         <text x="17" y="19" fill="red">IPOsList</text>
+       </svg> 
+      </div>
+      <p>IPOs List</p>
+      </a>
+      </div>
+    
+      <div class="col-lg-3 col-md-5 col-sm-6 col-xs-12">
+     
+        <a [routerLink]="['/companylist']" class="card companylist mx-5 my-5">
+        <div class="overlay"></div>
+        <div class="circle">
+        <svg height="30" width="200">
+           <text x="17" y="19" fill="red">CompaniesList</text>
+         </svg> 
+        </div>
+        <p>CompaniesList</p>
+        </a>
+        </div>
+
+        <div class="col-lg-3 col-md-5 col-sm-6 col-xs-12">
+     
+          <a [routerLink]="['/userprofile']" class="card users mx-5 my-5">
+          <div class="overlay"></div>
+          <div class="circle">
+          <svg height="30" width="200">
+             <text x="17" y="19" fill="red">UserProfile</text>
+           </svg> 
+          </div>
+          <p>UserProfile</p>
+          </a>
+          </div>
+          
+        
+    </div>
+    </div>
+ 
+ 

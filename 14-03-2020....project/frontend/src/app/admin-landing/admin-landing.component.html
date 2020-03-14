@@ -1,0 +1,173 @@
+<!-- <nav class="navbar navbar-expand" >
+   <div>
+       <ul class="navbar-nav">
+           <li class="nav-item">
+               <a class="nav-link" [routerLink]="['/companylist']"><button class="btn btn-outline-primary">CompanyList</button></a>
+           </li>
+           <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/ipo']"><button class="btn btn-outline-primary">IpoList</button></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/stock']"><button class="btn btn-outline-primary">StockList</button></a>
+        </li>
+           <li class="nav-item">
+               <a routerLink="comparecompany" class="nav-link" ><button class="btn btn-outline-primary"> Compare Company</button></a>
+           </li>
+           <li class="nav-item">
+               <a  class="nav-link" [routerLink]="['/sector']"><button class="btn btn-outline-primary"> Sectorlist</button></a>
+           </li>
+           
+           
+       </ul>
+   </div>
+</nav>
+    <header>
+        <app-adminnav></app-adminnav> 
+        <div class="container rounded">
+       
+        <div class="row mb-3">
+          <div class="col-5 my-5 ">
+
+              <div class="card mx-auto">  
+
+                 <h1 class=" text-center  bg-info text-white "> STOCK MARKETING </h1>  <br>
+              <div class="card my-card border border-curved text-center btn btn-outline-info" onclick="location.href='importdata'">
+                      <div class=" bg-light text-dark text-center">
+                      <h3 class="card-title display-5">ImportData</h3>
+                     </div>  
+              </div>
+
+                  <div class="card my-card border border-curved text-center btn btn-outline-info" onclick="location.href='managecompany'">
+                     <div  class=" bg-light text-dark text-center">
+                     <h3 class="card-title display-5 ">CompanyDetails</h3>
+                  </div>
+                   </div>
+
+                   <div class="card my-card border border-curved text-center btn btn-outline-info" onclick="location.href='manageexchange'">
+                    <div  class=" bg-light text-dark text-center">
+                    <h3 class="card-title display-5 ">ManageExchange</h3>
+                 </div>
+                  </div>
+
+                  <div class="card my-card border border-curved text-center btn btn-outline-info" onclick="location.href='addipo'">
+                    <div  class=" bg-light text-dark text-center">
+                    <h3 class="card-title display-5 ">Update IPO details</h3>
+                 </div>
+                  </div>
+                  <div class="card my-card border border-curved text-center btn btn-outline-info" (click)="addSector()">
+                    <div  class=" bg-light text-dark text-center">
+                    <h3 class="card-title display-5 ">Sector</h3>
+                 </div>
+                  </div>
+                 </div>
+              
+          </div>
+          
+         </div>
+        </div>
+     
+         
+      </header>
+       -->
+
+       <br>
+       <div class="row mb-4 mx-5  my-5">
+ 
+         <div class="col-lg-2 col-md-5 col-sm-6 col-xs-12">
+       
+ <a [routerLink]="['/importdata']" class="card import mx-5 my-5">
+      <div class="overlay"></div>
+   <div class="circle">
+     <svg height="30" width="200">
+         <text x="17" y="19" fill="red">ImportData</text>
+       </svg> 
+ 
+   </div>
+   <p>ImportData</p>
+ </a>
+      
+     </div>
+ 
+    
+ 
+         <div class="col-lg-2 col-md-5 col-sm-6 col-xs-12">
+       
+ <a [routerLink]="['/ipo']" class="card ipo mx-5 my-5">
+      <div class="overlay"></div>
+   <div class="circle">
+     <svg height="30" width="200">
+         <text x="17" y="19" fill="red">Ipo</text>
+       </svg> 
+ 
+   </div>
+   <p>Manage IPO</p>
+ </a>
+      
+     </div>
+ 
+ 
+ 
+         <div class="col-lg-2 col-md-5 col-sm-6 col-xs-12">
+ <a  [routerLink]="['/company']" class="card company mx-5 my-5 ">
+      <div class="overlay"> </div>
+      
+   <div class="circle">
+     
+      <svg height="30" width="200">
+         <text x="17" y="19" fill="red">Company</text>
+       </svg> 
+    
+     </div>
+ 
+ 
+   
+   <p>ManageCompany</p>
+ </a>
+ 
+         </div>
+    
+ 
+ 
+ 
+ 
+ 
+      
+ <div class="col-lg-2 col-md-5 col-sm-6 col-xs-12 ">
+ 
+ <a  [routerLink]="['/stock']" class="card stock mx-5 my-5">
+      <div class="overlay"></div>
+   <div class="circle">
+     <svg height="30" width="200">
+         <text x="17" y="19" fill="red">StockExchange</text>
+       </svg> 
+     
+ 
+ 
+   </div>
+   <p> Manage StockExchange</p>
+ </a>
+        
+       </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     
+   <div class="col-lg-2 col-md-5 col-sm-6 col-xs-12">
+ 
+ <a [routerLink]="['/users']" class="card users mx-5 my-5">
+      <div class="overlay"></div>
+   <div class="circle">
+     <svg height="30" width="200">
+         <text x="17" y="19" fill="red">Users</text>
+       </svg> 
+     
+ 
+   </div>
+   <p>Manage Users</p>
+ </a>
+ </div>
+ </div>  

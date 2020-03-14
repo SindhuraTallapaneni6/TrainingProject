@@ -1,0 +1,75 @@
+
+<div class="container">
+    
+              <form  [formGroup]="addipoform" (ngSubmit) ="onSubmit() ">
+                <p class="h1 text-muted text-uppercase text-center mb-4">IPO</p>
+                <div class="form-group ">
+              
+                    <label for="id" class="text-primary">Id:</label>
+                    <input type="number" formControlName="id" 
+                    placeholder="Enter Id" name="id" class="form-control" id="id" required>
+               
+                
+                </div>
+                <div class="form-group ">
+                      
+                    <label for="companyname" class="text-primary">CompanyName:</label>
+                    <input type="text" formControlName="companyname" 
+                    placeholder="Enter Companyname" name="companyname" class="form-control" id="companyname" required>
+               
+                
+                </div>
+                <div class="form-group ">
+                    <label for="opendatetime" class="text-primary">Open Date-Time:</label><br>
+                    <input class="form-control" type="datetime-local"  formControlName="opendatetime" name="opendatetime" id="opendatetime">
+                    </div>
+
+                <!-- <div class="form-group ">
+              
+                    <label for="username" class="text-primary">Company Name:</label>
+                    <select name="comname" id="comname" class="form-control">
+                        <option value="apple">Apple</option>
+                        <option value="microsoft">Microsoft</option>
+                        <option value="google">Google</option>
+                    </select>
+    
+                
+                </div> -->
+                
+                <div class="form-group ">
+                    <label for="pricepershare" class="text-primary">Price per Share:</label>
+                        <input type="number"  formControlName="pricepershare" class="form-control" placeholder="Price in Rupees">
+                    </div>
+
+                <div class="form-group ">
+                
+                <label for="stockexchage" class="text-primary">Stock Exchange:</label>
+                <select class="form-control" formControlName="stockexchange" name="stockexchange" id="stockexchange">
+                    <option value="bse">BSE</option>
+                    <option value="nse">NSE</option>
+                </select>
+                </div>
+
+              
+
+                <div class="form-group ">
+
+                <label for="totalstocks" class="text-primary">Total Stocks</label>
+                <input type="number" formControlName="totalstocks" class="form-control" placeholder="Total Number of Stocks" id="totalstocks">
+                </div>
+
+               
+                
+                <div class="form-group ">
+                <label for="remarks" class="text-primary">Remarks:</label>
+                <textarea class="form-control mb-4" formControlName="remarks" name="remarks" id="remarks" cols="30" rows="3" placeholder="Remarks about this IPO"></textarea>
+                    </div>
+               
+                <div class="form-group">
+                    <button class="btn btn-primary" (click)="addIpo()" [routerLink]="['/ipo']" [disabled]="!addipoform.valid">AddIpo</button>
+                </div><br><br>
+                
+            
+            </form>
+            </div>
+        

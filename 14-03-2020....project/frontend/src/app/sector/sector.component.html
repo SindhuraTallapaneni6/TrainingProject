@@ -1,0 +1,19 @@
+<div class="table-responsive">
+    <table class="table">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Brief</th>
+            <th>ACTIONS</th>
+        </tr>
+        <tr *ngFor="let sector of sectorsData">
+            <td>{{sector.id}}</td>
+            <td>{{sector.brief}}</td>
+            <td>{{sector.name}}</td>
+            
+            <td><button class="btn btn-danger" (click)="deleteSector(sector)">Delete</button>
+                <button class="btn btn-info" (click)="updateSector(sector)">Update</button>
+            </td>
+        </tr>
+    </table>
+    </div>
